@@ -63,14 +63,14 @@
 }
 
 :root {
-  --color-brand--secondary: #1e1e1e;
-  --color-neutral--white: white;
-  --color-neutral--grey: #f7f7f7;
-  --color-brand--primary: #584efe;
-  --color-neutral--black: black;
+  --color-brand--secondary: #221435;
+  --color-neutral--white: #ffffff;
+  --color-neutral--grey: #f7f7fb;
+  --color-brand--primary: #5b2cff;
+  --color-neutral--black: #000000;
   --color-neutral--transparent: transparent;
-  --color-brand--tertiary: #eb1362;
-  --color-brand--alternative: #1e4aa2;
+  --color-brand--tertiary: #9b5cff;
+  --color-brand--alternative: #3a1b6f;
   --color-brand--success: #45dc84;
   --color-brand--error: #eb1362;
 }
@@ -641,7 +641,7 @@ blockquote {
   z-index: -1;
   filter: blur(250px);
   pointer-events: none;
-  background-color: #3c87ff6e;
+  background-color: #5b2cff33;
   border-radius: 342px;
   width: 558px;
   height: 537px;
@@ -653,7 +653,7 @@ blockquote {
   z-index: -1;
   filter: blur(250px);
   pointer-events: none;
-  background-color: #584efe52;
+  background-color: #9b5cff33;
   border-radius: 342px;
   width: 558px;
   height: 537px;
@@ -858,7 +858,7 @@ blockquote {
   width: 100px;
   height: 100px;
   display: flex;
-  box-shadow: 10px 15px 44px #584efe4d;
+  box-shadow: 10px 15px 44px #5b2cff40;
 }
 
 .play-icon {
@@ -1159,7 +1159,7 @@ blockquote {
 .pricing-left-shape {
   z-index: -1;
   filter: blur(250px);
-  background-color: #584efe52;
+  background-color: #9b5cff33;
   border-radius: 342px;
   width: 584px;
   height: 576px;
@@ -1170,7 +1170,7 @@ blockquote {
 .pricing-right-shape {
   z-index: -1;
   filter: blur(250px);
-  background-color: #3c87ff6e;
+  background-color: #5b2cff33;
   border-radius: 342px;
   width: 558px;
   height: 537px;
@@ -1245,7 +1245,7 @@ blockquote {
 .testimonial-left-shape {
   z-index: -1;
   filter: blur(250px);
-  background-color: #584efe52;
+  background-color: #9b5cff33;
   border-radius: 342px;
   width: 584px;
   height: 576px;
@@ -1256,7 +1256,7 @@ blockquote {
 .testimonial-right-shape {
   z-index: -1;
   filter: blur(250px);
-  background-color: #3c87ff6e;
+  background-color: #5b2cff33;
   border-radius: 342px;
   width: 558px;
   height: 537px;
