@@ -104,8 +104,17 @@
           <div class="w-layout-blockcontainer base-container w-container">
             <div class="margin-bottom-32px">
               <div data-w-id="99815e51-d3ed-c306-2f5b-f018ed9ebaa8" style="-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="business-heading-text">Join founders launching MVPs in 31 days.</div>
-              <div class="margin-top-8px" style="margin-top:8px">
-                <span>Previous projects: </span><a href="https://tryvibepredict.com" target="_blank">tryvibepredict.com</a>
+              <div class="margin-top-8px" style="margin-top:16px;display:flex;justify-content:center">
+                <div id="project-tryvibe" style="width:100%;max-width:940px;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:16px;background:linear-gradient(180deg,#ffffff, #fafafa)">
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+                    <div style="font-weight:600;color:#111;font-size:16px">Previous project</div>
+                    <a href="https://tryvibepredict.com" target="_blank" style="color:#4f46e5;text-decoration:none;font-weight:600">tryvibepredict.com →</a>
+                  </div>
+                  <div style="position:relative;border-radius:10px;overflow:hidden;border:1px solid rgba(0,0,0,.06);background:#f8fafc">
+                    <iframe title="tryvibepredict.com preview" data-src="https://tryvibepredict.com" srcdoc="<!DOCTYPE html><html><head><meta charset=\"utf-8\"><style>html,body{height:100%;margin:0}body{display:flex;align-items:center;justify-content:center;background:#fff;color:#111;font:600 16px system-ui} .chip{padding:8px 12px;border-radius:999px;background:#f1f5f9;border:1px solid #e5e7eb;color:#334155}</style></head><body><div class=\"chip\">Click to load live preview</div></body></html>" loading="lazy" style="width:100%;height:260px;border:0;display:block"></iframe>
+                    <button type="button" style="position:absolute;right:12px;bottom:12px;padding:8px 12px;border-radius:8px;border:1px solid rgba(0,0,0,.08);background:#ffffff;color:#111;cursor:pointer">Preview</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div data-w-id="906dcfcb-4e5b-cd9b-336c-f5631ecc6496" style="-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="marquee-wrapper">
@@ -751,5 +760,26 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68e262db4ab30641ef3e8369" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+    (function(){
+      try{
+        var card=document.getElementById('project-tryvibe');
+        if(!card) return;
+        var frame=card.querySelector('iframe');
+        var btn=card.querySelector('button');
+        function load(){
+          if(frame && frame.getAttribute('data-src')){
+            frame.src=frame.getAttribute('data-src');
+            frame.removeAttribute('data-src');
+          }
+        }
+        if(btn) btn.addEventListener('click',load);
+        card.addEventListener('click',function(e){
+          var tag=(e.target&&e.target.tagName||'').toLowerCase();
+          if(tag!=='a'&&tag!=='button') load();
+        });
+      }catch(e){}
+    })();
+  </script>
 </body>
 </html>
